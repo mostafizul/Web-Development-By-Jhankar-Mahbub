@@ -35,6 +35,6 @@ i{
 }
 .box-model{
     min-height: 300px;
-    min-width: 30px;
+    max-width: 150px;
     background-color: blue;
 }
