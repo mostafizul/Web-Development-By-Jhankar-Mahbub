@@ -12,6 +12,17 @@
 }
 #box-3{
     background-color: green;
-    width: 300px;
+    width: 3000px;
     height: 200px;
+}
+p{
+    width: 300px;
+    border: 1px solid black;
+    height: 200px;
+    overflow:auto;
+}
+i{
+    font-size: 30px;
+    padding: 20px 30px;
+    color: blue;
 }
