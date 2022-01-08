@@ -1,0 +1,13 @@
+.sajek,.cox,.sundarban {
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;   
+    width: 100%;
+    margin:5px 0px; 
+    font-size: 1em; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.siam {
+    color: rgb(0, 255, 34);
+}
