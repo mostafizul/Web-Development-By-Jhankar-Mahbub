@@ -27,7 +27,7 @@ i{
     color: blue;
 }
 .para:hover{
-    transform: scale(3) rotate(45deg);
+    transform: scale(3) rotate(-45deg);
 }
 .right{
     float:right;
