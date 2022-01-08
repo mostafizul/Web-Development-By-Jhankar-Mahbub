@@ -29,3 +29,12 @@ i{
 .para:hover{
     transform: scale(3) rotate(45deg);
 }
+.right{
+    float:right;
+    cursor: pointer;
+}
+.box-model{
+    min-height: 300px;
+    min-width: 30px;
+    background-color: blue;
+}
