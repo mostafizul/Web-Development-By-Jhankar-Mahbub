@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        .photo-frame{
+            width: 300px;
+            height: 240px;
+            border:2px solid goldenrod;
+            position: relative;
+        }
+        .photo img{
+            width: 100%;
+        }
+        .photo-album{
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+        .photo-detail{
+            position: absolute;
+            width: 300px;
+            top:0;
+            display: none;
+        }
+        .photo-frame:hover .photo-detail{
+            display: block;
+            color: white;
+            background-color: violet;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <section>
+       <h3>Food Album</h3>
+       <div class="photo-album">
+           <div class="photo-frame">
+               <div class="photo"><img src="food.jpg" alt=""></div>
+           
+           <div class="photo-detail">
+               <h3>Food Photo</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum nemo debitis porro doloribus quia ducimus veritatis? Fugit repudiandae officia fugiat necessitatibus perferendis, id tempora iste sit eaque voluptas ab unde, qui aliquid veniam inventore laudantium corrupti error rem delectus nesciunt non iure! Minima odio optio rem sapiente explicabo sint.</p>
+           </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo"><img src="food.jpg" alt=""></div>
+        
+        <div class="photo-detail">
+            <h3>Food Photo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum nemo debitis porro doloribus quia ducimus veritatis? Fugit repudiandae officia fugiat necessitatibus perferendis, id tempora iste sit eaque voluptas ab unde, qui aliquid veniam inventore laudantium corrupti error rem delectus nesciunt non iure! Minima odio optio rem sapiente explicabo sint.</p>
+        </div>
+     </div>
+     <div class="photo-frame">
+        <div class="photo"><img src="food.jpg" alt=""></div>
+    
+    <div class="photo-detail">
+        <h3>Food Photo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum nemo debitis porro doloribus quia ducimus veritatis? Fugit repudiandae officia fugiat necessitatibus perferendis, id tempora iste sit eaque voluptas ab unde, qui aliquid veniam inventore laudantium corrupti error rem delectus nesciunt non iure! Minima odio optio rem sapiente explicabo sint.</p>
+    </div>
+ </div>
+        
+       </div>
+
+       
+   </section>
+</body>
+</html>
