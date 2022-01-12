@@ -11,6 +11,7 @@
             height: 240px;
             border:2px solid goldenrod;
             position: relative;
+            overflow: hidden;
         }
         .photo img{
             width: 100%;
@@ -29,11 +30,15 @@
             top:0;
             display: none;
         }
-        .photo-frame:hover .photo-detail{
+        /* .photo-frame:hover .photo-detail{
             display: block;
             color: white;
             background-color: violet;
             cursor: pointer;
+        } */
+        .photo-frame:hover .photo{
+            transform: scale(1.5);
+            transition: 0.5s;
         }
     </style>
 </head>
