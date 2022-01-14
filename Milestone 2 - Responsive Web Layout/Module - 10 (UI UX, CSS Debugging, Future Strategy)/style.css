@@ -1,0 +1,26 @@
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 1em;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown{
+    position: absolute;
+    background-color: burlywood;
+    display: none;
+}
+nav li:hover .dropdown{
+    display: block;
+}
+nav>ul>li:hover .dropdown.mega-menu{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2em;
+    border-radius: 5px;
+}
