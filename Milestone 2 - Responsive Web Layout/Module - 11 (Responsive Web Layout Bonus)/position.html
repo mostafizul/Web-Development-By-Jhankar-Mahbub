@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        body{
+            border: 2px solid black;
+        }
+        .container{
+            border: 5px solid orange;
+            position: relative;
+            
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+        #box-1{
+            background-color: cornflowerblue;
+        }
+        #box-2{
+            background-color: #663399;
+           
+                       
+        }
+        #box-3{
+            background-color: seagreen;
+            position: absolute;
+            top:0;
+            left:100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore relative and Absolute one more time</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore voluptatibus consequuntur porro aliquid quidem fugit aperiam aut error autem debitis, iusto quasi eaque quibusdam neque dolorum, exercitationem suscipit necessitatibus fugiat nobis eligendi, maxime impedit. Asperiores, placeat. Illum repudiandae delectus minima ullam, nemo voluptates et corporis mollitia tenetur minus nostrum!</p>
+    <div class="container">
+        <div class="box" id="box-1">BOX-1</div>
+        <div class="box" id="box-2">BOX-2</div>
+        <div class="box" id="box-3">BOX-3</div>
+    </div>
+</body>
+</html>
