@@ -1,0 +1,21 @@
+header{
+    background-color: #FFFBF0;
+}
+.nav-item a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #3C3C3C;
+}
+.banner-body button{
+    background-color: #A4BC46;
+    color: white;
+}
+#women-jacket{
+    background-color: white;
+}
+
+.card img{
+    background-color:#F1F1F1;
+    width: 90%;
+    margin-top: 5%;
+}
