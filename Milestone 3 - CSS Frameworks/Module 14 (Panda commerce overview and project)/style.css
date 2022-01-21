@@ -1,0 +1,26 @@
+.carousel-inner{
+background-color: #FEEAE9;
+}
+.price{
+    color:#FF136F;
+}
+.carousel-item button{
+    background-color: #FF136F;
+    color:white;
+    border: none;
+}
+.card-1{
+    background-color: #FF9C35;
+    border: none;
+}
+.card-2{
+    background-color: #FF589B;
+    border:none
+}
+.card-3{
+    background-color: #4289FF;
+}
+.shoe-price{
+    background-color: #ff2077;
+    border: none;
+}
