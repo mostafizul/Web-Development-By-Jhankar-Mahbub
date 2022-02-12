@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    
+    <!-- <h1>Event niye Clickbaji</h1>
+    <button onclick="document.body.style.backgroundColor = 'yellow'">click me</button>
+    <button onclick="makeRed()">click me: red</button>
+    <button id="blue-button">Click me: Blue</button>
+    <button id="green-button">Click me: Green</button> -->
+    
+    <p id="clicking-method"></p>
+    <input type="text" id="input-text">
+    <button id="update-name">Update</button>
+    <button id="handle-event" >click me</button>
 
+   <script>
+    //   function handleJustFunctionClick(){
+    //     const clickingMethod = document.getElementById('clicking-method');
+
+    //   }
+    document.getElementById('handle-event').addEventListener("click", function(){
+        document.getElementById('clicking-method').innerText = "hello world";
+    })
+
+    document.getElementById('update-name').addEventListener("click",function(){
+        const inputField = document.getElementById('input-text');
+
+        const p = document.getElementById('clicking-method');
+        p.innerText = inputField.value;
+        inputField.value = " ";
+    })
+   </script>
+
+  <!-- <script src="event.js"></script> -->
+  <script src="event-common.js"></script>
+</body>
+</html>
