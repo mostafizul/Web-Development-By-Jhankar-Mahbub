@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+      <h1>Welcome to my website</h1>
+      <h3>Blogs list</h3>
+      <ul>
+          <li>Blog-1</li>
+          <li>Blog-2</li>
+          <li>Blog-3</li>
+          <li>Blog-4</li>
+      </ul>
+  </header>
+    <main>
+        <section>
+            <article>
+                <h3>My Awesome Blog-1</h3>
+                <p id="first-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem.</p>
+            </article>
+            <article>
+                <h3>My Awesome Blog-2</h3>
+                <p class="para">Provident assumenda unde odio tempora consectetur vitae ratione deserunt quod!</p>
+            </article>
+            <article>
+                <h3>My Awesome Blog-3</h3>
+                <p class="para">Quae, harum impedit odit repellendus mollitia ea at quos ex.</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const student = {name:'siam',age:27,sex:'Male'}
+        console.log(document.body);
+
+        const headingTitle = document.getElementsByTagName("h3");
+        //console.log(headingTitle);
+        for(const value of headingTitle){
+            console.log(value.innerHTML);
+        }
+        const para = document.getElementById("first-para").innerHTML="fisrt para";
+
+        const paraClass = document.getElementsByClassName("para");
+
+        for (const para of paraClass){
+            para.style.border = "1px solid black";
+        }
+        
+        const querySelector = document.querySelector("article").style.backgroundColor="red";
+
+        console.log(document.getElementsByTagName("p"));
+        console.log(document.querySelectorAll("p"));
+
+        const li = document.createElement("li");
+        li.innerText = "blog-5"
+        const liParent = document.getElementsByTagName("ul")[0].appendChild(li);
+    </script>
+    <script>
+        console.log("siam");
+    </script>
+</body>
+</html>

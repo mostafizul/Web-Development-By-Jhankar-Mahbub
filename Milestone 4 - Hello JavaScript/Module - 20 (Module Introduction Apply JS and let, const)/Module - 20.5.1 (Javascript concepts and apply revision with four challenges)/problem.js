@@ -20,6 +20,7 @@ console.log(farenheitTocelcius(farenheit));
 
 // problem - 2
 //simple interest calculator (5 bochore koto interest)
+/*
 var principalAmount = parseFloat(prompt("Enter your Principal amount: "));
 var interestRate = parseFloat(prompt("Enter your Interest Rate(%): "));
 var time = parseInt(prompt("Enter your Interest Time (Years): "));
@@ -33,4 +34,6 @@ var interest = interestAmount-principalAmount;
 
 console.log("Your Interest Amount: "+interest);
 console.log("Your Total Interest: "+interestCalculator(principalAmount,interestRate,time));
+*/
+
 
