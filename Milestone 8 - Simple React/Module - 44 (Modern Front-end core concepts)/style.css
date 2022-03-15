@@ -1,0 +1,9 @@
+.countries{
+    border: 1px solid orange;
+}
+#countries{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    text-align:center ;
+}
