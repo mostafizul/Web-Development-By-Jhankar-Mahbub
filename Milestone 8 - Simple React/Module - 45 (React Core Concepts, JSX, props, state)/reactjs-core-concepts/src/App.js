@@ -2,45 +2,55 @@ import logo from './logo.svg';
 import './App.css';
 
 const number = 555;
-const singer = {
-  name: 'Dr. Mahfuz', job: 'singer'
-}
+const singers = [
+  {name: 'Dr. Mahfuz', job: 'singer1'},
+  {name: 'Eva Rahman', job: 'singer2'},
+  {name: 'Pink Floyd', job: 'David Gilmour'},
+  {name: 'Iron Maiden', job: 'Bruce'},
+]
 const singer2 = {
-  name: 'Eva Rahman', job: 'singer'
-}
-const singerStyle = {
-  color: 'black',
-  backgroundColor: 'white'
 }
 
 function App() {
+  const nayoks = ['siam',' brock',' aamir',' Tom Cruise']
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
+      {
+        nayoks.map(nayok => <li>{nayok}</li>)
+      }
+      {/* {
+        nayoks.map(nayok => <Person name={nayok}></Person>)
+      } */}
+      {
+        singers.map(singer=><Person name={singer.name}></Person>)
+      }
+
+     {/*  <Person name={nayoks[0]}></Person>
+      <Person name={nayoks[1]}></Person>
+      <Person name={nayoks[2]}></Person> */}
+
       <h5>New Component</h5>
-      <Friend></Friend>
-      <Friend></Friend>
-      <Friend></Friend>
+      <Friend name1="brock"></Friend>
+      <Friend name1="aamir"></Friend>
     </div>
   );
 }
 
-function Person() {
+function Person(props) {
+  console.log(props);
   return (
     <div className='person'>  
-      <h1>siam</h1>
-      <p>bkash</p>
+      <h1>{props.name}</h1>
+      <p></p>
     </div>
   )
 }
 
-function Friend(){
+function Friend(props){
+  console.log(props);
   return(
     <div className='friend'>
-      <h3>Name: Brock Lesnar</h3>
+      <h3>{props.name1}</h3>
       <p>Job: Wrestler</p>
     </div>
   )
