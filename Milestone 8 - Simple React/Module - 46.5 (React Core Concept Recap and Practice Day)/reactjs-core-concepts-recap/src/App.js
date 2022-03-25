@@ -1,17 +1,20 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css';       
 import {useEffect, useState} from 'react';
+import Comments from './components/Comments/Comments';
+
 function App() {
   return (
     <div className="App">
-      <LoadPosts></LoadPosts>
+     {/*  <LoadPosts></LoadPosts>
       <District name="Dhaka"></District>
-      <District name="rangamati"></District>
+      <District name="rangamati"></District> */}
+      <Comments></Comments>
     </div>
   );
 }
 
-function LoadPosts(){
+/* function LoadPosts(){
   const [posts, setPost] = useState([]);
   useEffect(() =>{
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -53,5 +56,5 @@ function District(props){
     <button onClick={unBoostPower}>Unboost</button>
   </div>
   )
-}
+} */
 export default App;
